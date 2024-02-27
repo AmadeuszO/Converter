@@ -5,12 +5,13 @@
 }
 
 body {
+    font-family: sans-serif;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #154190;
+    background-color: rgba(93, 49, 112, 0.87);
 }
 
 .conteiner{
