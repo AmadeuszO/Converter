@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-size: 16px;
+    --color-font: #333;
+    --font-weight: 500;
+}
+
 body {
     font-family: sans-serif;
     width: 100%;
@@ -14,11 +20,44 @@ body {
     background-color: rgba(93, 49, 112, 0.87);
 }
 
-.conteiner{
+.wrapper {
     max-width: 40%;
     width: 100%;
     display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+header {
+    font-size: var(--font-size);
+    color: var(--color-font);
+    font-weight: var(--font-weight);
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+button{
+    font-size: var(--font-size);
+    color: #fff;
+    padding: 14px 0;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    background-color: rgba(93, 49, 112, 0.87);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: rgba(123, 67, 151, 0.87);
 }
